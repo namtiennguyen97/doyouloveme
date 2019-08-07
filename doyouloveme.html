@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="fashion.css">
+</head>
+<body>
+<h1 id="tt">Do you love me?</h1>
+<h id="hola">Choice!</h>
+<h3 id="haha" onmouseover="fight()" >After me!!!</h3>
+<input id="right" type="button" value="YES I DO!" onclick="agree()">
+<input type="button" value="NO WAY!"  onmouseover="never()" id="del">
+<input type="button" id="shame" value="What a shame!"  onmouseover="shame(), challenge()">
+</body>
+<script>
+    function agree() {
+        alert("You've made the best choice! Hehe")
+    }
+    function never() {
+
+        let x = Math.random()* window.innerHeight;
+        let y = Math.random()* window.innerWidth;
+        document.getElementById("del").style.left = x + "px";
+        document.getElementById("del").style.top = y + "px";
+    }
+    function shame() {
+        let a = Math.random()* window.innerHeight;
+        let b = Math.random()* window.innerWidth;
+        document.getElementById("shame").style.left = a + "px";
+        document.getElementById("shame").style.top = b + "px";
+    }
+    function challenge() {
+        document.getElementById("hola").innerHTML ="<b>You can't beat meeeeee!!!!</b><style onclick='challenge()'>";
+    }
+    function fight() {
+        let c = Math.random()*window.innerHeight;
+        let d = Math.random()*window.innerWidth;
+        document.getElementById("haha").style.left = c + "px";
+        document.getElementById("haha").style.top = d + "px";
+    }
+</script>
+
+</html>

@@ -1,0 +1,29 @@
+#del{
+    position: absolute;
+    left: 350px;
+    top: 100px;
+    color: maroon;
+}
+#tt{
+    color: darkblue;
+    position: absolute;
+    left: 300px;
+    top: 20px;
+}
+#shame{
+    position: absolute;
+    left: 500px;
+    top: 100px;
+    color: darkred;
+}
+#right{
+    position: absolute;
+    left: 200px;
+    top: 100px;
+}
+
+#haha{
+    position: absolute;
+left: 20px;
+    top: 80px;
+}
